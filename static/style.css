@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc1d10' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23c64d00' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a32600' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23bd6b00' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239c3700' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23b48308' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23954400' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23aa982c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238e4e00' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a2aa4c' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23885607' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.card-img{
+    height: 200px;
+    width: 200px;
+    color:white
+}
+.logo a{
+    text-decoration: none;
+    color:orange
+}
+.title{
+    color:orange;
+    font-size: medium;
+    font-weight: bold;
+    margin-top:2em;
+}
+.about-body{
+    color:whitesmoke;
+    font-size: x-large;
+    font-weight: bold;
+    vertical-align: bottom;
+    text-align: center;
+
+    text-shadow: orange;
+}
+.quote{
+    max-width: 700px;
+    border-color: whitesmoke;
+    margin:0 auto;
+    height:fit-content;
+    border-width: thin;
+    border-left-width: 20px;
+    margin-top: 2em;
+    border-style: solid;
+    padding:20px
+   
+
+}
+.block{
+    font-size: x-large;
+    color:orange;
+  
+    
+
+}
+.author{
+    text-align: right;
+}
+.about{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding:200px 20px;
+
+}
+.news-img{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    width: 300px;
+    height:300px;
+}
+.news-container{
+
+    margin:0 auto;
+    width:80%;
+    height:fit-content;
+   
+    padding: 50px 10px;
+}
+.news-body{
+    color:whitesmoke;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 2em;
+}
+#google{
+    
+    width:250px;
+    height:50px;
+    background-color:#e8550c;
+    border-radius: 2em;
+    border-color: whitesmoke;
+    
+    
+}
+#google-link{
+    text-decoration: none;
+    color:white;
+    font-size: medium;
+  
+    
+
+}
+#google-image{
+    width: 200px;
+    height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    border-radius: 50%;
+  
+      
+      
+   
+}
+.form-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+   
+    
+    
+}
+#form-con{
+    margin-top: 10em;
+    
+}
+.navbar{
+    padding: 1em;
+}
+.logo{
+    text-decoration: none;
+    font-weight: bold;
+    color: orange;
+    font-size: 1.2em;
+    margin-left:2em;
+    padding: 0 50px;
+
+}
+.card{
+    
+    width: 70%;
+    height:fit-content;
+    margin:0 auto;
+    padding:50px 50px;
+    display:flex;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+
+.card-title{
+    color:whitesmoke;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-left: 50px;
+    display:block
+}
+
+.card-title-read-btn{
+   
+    background-color: black;
+    position: absolute;
+    bottom:4em;
+    right:25%;
+
+    cursor: pointer;
+
+    width:200px;
+    height:50px;
+    border-color: orange;
+    border-radius: 2em;
+    text-decoration: none;
+    color:orange;
+    font-weight: bold;
+    font-size: x-large;
+    
+}
+nav{
+    padding-top: 10px;
+}
+.nav-ul{
+    
+    float:right;
+    margin-right:25px;
+
+}
+
+.nav-span{
+    color:whitesmoke
+}
+.nav-ul li{
+    display:inline;
+    margin:0 10px;
+    color:white;
+    cursor:pointer;
+    
+}
+.nav-ul li a{
+    
+    color:white;
+    cursor:pointer;
+    
+}
+.nav-ul li a:hover{
+    
+    color:orange;
+    
+    
+}
+#check-label{
+    float:right;
+    margin-right:25px;
+    color:orange;
+    display: none;
+}
+#check{
+    display:none;
+}
+@media (max-width:750px) {
+    #check-label{
+        display:block;
+        margin-right:10px;
+        color:orange;
+        
+        
+    }
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: orange;
+        font-size: 1.2em;
+        margin-left:1em;
+        padding: 0 25px;
+    
+    }
+    .logo a{
+        text-decoration: none;
+        color:orange;
+    }
+    .title{
+        color:orange;
+        font-size: medium;
+        font-weight: bold;
+        margin-top:2em;
+    }
+    .news-img{
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        width: 80%;
+    
+    }
+    .news-container{
+    
+        margin:0 auto;
+        width:80%;
+        height:fit-content;
+       
+        padding: 50px 10px;
+    }
+    .news-body{
+        color:whitesmoke;
+        text-align: justify;
+        font-size: medium;
+    }
+    .nav-ul{
+        position:fixed;
+        height:100vh;
+        width:100%;
+        background-color: black;
+        top:100px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    .nav-ul li{
+        display:block;
+        color:white;
+        font-weight: bold;
+        padding:50px 50px;
+
+    }
+    .nav-ul li a:hover{
+    
+        color:orange;
+        
+        
+    }
+    #check:checked ~ ul{
+        left:0;
+        
+    }
+    
+    .card{
+    
+        width: 80%;
+        height:fit-content;
+        margin:0 auto;
+        padding:50px 50px;
+        display:block;
+        margin-bottom: 30px;
+        
+        
+    }
+    .card-img{
+        height: 200px;
+        width: 200px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-title{
+        color:whitesmoke;
+        font-weight: bold;
+        
+        margin-left: 0;
+        text-align: center;
+        margin-top: 2em;
+        display:block
+    }
+    
+    
+    .card-title-read-btn{
+       
+        background-color: black;
+        margin-top:2em;
+        cursor: pointer;
+        width:200px;
+        height:50px;
+        border-color: orange;
+        border-radius: 2em;
+
+        bottom: 0;
+        text-decoration: none;
+        color:orange;
+        font-weight: bold;
+        font-size: x-large;
+
+        
+    }
+}
+
+
+
+

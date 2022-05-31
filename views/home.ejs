@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Gravity</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check" onchange='handleChange()'>
+        <label for="check" id="check-label">
+            <i class="fa fa-reorder"></i>
+        </label>
+        <label class="logo">
+            <a href="/">Gra<span class="nav-span">vity</span></a>
+           
+        </label>
+        <ul class="nav-ul">
+            <li>
+               <a  href="/">Home</a>
+            </li>
+            <li>
+                <a href="/about">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="cards">
+        <% for(let a=0;a<15;a++){ %>
+            <div class='card'>
+
+                <img class='card-img' alt="image not available" src=<%=data[a]['urlToImage'] %> />
+                <div class="card-title">
+                    <%= data[a]['title'] %>
+                        <br />
+                        <form method = 'POST' action = '/news' >
+                            <textarea type = "text" name="title"   rows="4" cols="50"  hidden> <%= data[a]["title"] %></textarea> 
+                            <textarea type = "text" name="author" rows="4" cols="50"  hidden><%= data[a]["author"] %> ></textarea>
+                            <textarea type = "text" name="image" rows="4" cols="50"  hidden><%= data[a]["urlToImage"] %></textarea> 
+                            <textarea type = "text" name="url"  rows="4" cols="50" hidden><%= data[a]["url"] %></textarea> 
+                            <textarea type = "text" name="description"  rows="4" cols="50" hidden><%= data[a]["description"] %></textarea> 
+                            <textarea type = "text" name="content"  rows="4" cols="50" hidden><%= data[a]["content"] %></textarea> 
+                            <button class="card-title-read-btn" type = "submit">
+                                Read
+                            </button>
+                        </form>
+
+                        
+
+
+                </div>
+
+
+            </div>
+
+            <% } %>
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        
+        
+        function submit(a) {
+            console.log(a)
+            let  data = '<%-data%>'
+            /*for(let i in data[0]){
+                console.log(i)
+            }*/
+            //console.log(data[a]['title'])
+            $.ajax('/news', {
+                type: 'POST',
+                contentType: 'text/json',
+                data: JSON.stringify(data[a]),
+                complete: function () { /* Do something with the response. */ }
+            });
+        }
+        function handleChange() {
+            console.log('yes')
+            x = document.getElementById('cards')
+            if (x.style.display === "none") {
+
+                x.style.display = "block"
+            }
+            else {
+
+                x.style.display = 'none'
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

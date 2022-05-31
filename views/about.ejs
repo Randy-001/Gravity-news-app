@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Gravity</title>
+    
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check" >
+        <label for="check" id="check-label">
+            <i class="fa fa-reorder"></i>
+        </label>
+        <label class="logo">
+            <a href="/">Gra<span class="nav-span">vity</span></a>
+           
+        </label>
+        <ul class="nav-ul">
+            <li>
+               <a  href="/">Home</a>
+            </li>
+            
+        </ul>
+    </nav>
+    <div class="about" id = "about">
+        
+        <div>
+            
+            <div class="about-body">
+                Bringing best global news to your vision is our mission
+                
+            </div>    
+            <div class="quote">
+                <blockquote class="block">
+                    Gravity is a habit that is hard to shake off.
+                    <div class="author">- Terry Pratchet</div>
+                </blockquote>
+               
+            </div>
+        </div>
+       
+    </div>
+    
+
+
+
+    <script>
+        function handleChange() {
+            console.log('yes')
+            x = document.getElementById('about')
+            if (x.style.display === "none") {
+
+                x.style.display = "block"
+            }
+            else {
+
+                x.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>
